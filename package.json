@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-google-tag-manager",
+  "version": "1.0.0",
+  "description": "Cordova plugin for Google Tag Manager",
+  "cordova": {
+    "id": "cordova-plugin-google-tag-manager",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-five-stones/cordova-plugin-google-tag-manager.git"
+  },
+  "author": "FiveStones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-five-stones/cordova-plugin-google-tag-manager/issues"
+  },
+  "homepage": "https://github.com/the-five-stones/cordova-plugin-google-tag-manager",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "analytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  }
+}

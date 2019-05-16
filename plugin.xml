@@ -1,0 +1,39 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-google-tag-manager"
+      version="1.0.0">
+
+    <name>GoogleTagManagerPlugin</name>
+    <description>Cordova plugin for Google Tag Manager</description>
+    <license>MIT</license>
+    <keywords>cordova</keywords>
+    <repo>https://github.com/the-five-stones/cordova-plugin-google-tag-manager</repo>
+    <issue>https://github.com/the-five-stones/cordova-plugin-google-tag-manager/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-android" version=">=7.0.0"/>
+        <engine name="cordova-ios" version=">=5.0.0"/>
+    </engines>
+
+    <platform name="ios">
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods>
+                <pod name="GoogleTagManager" spec="~> 7.0.0" />
+            </pods>
+        </podspec>
+    </platform>
+
+    <platform name="android">
+        <preference name="FIREBASE_CORE_VERSION" default="16.0.+"/>
+
+        <dependency id="cordova-support-android-plugin" version="~1.0.0"/>
+        <dependency id="cordova-support-google-services" version="^1.2.0"/>
+
+        <framework src="com.google.android.gms:play-services-tagmanager:$FIREBASE_CORE_VERSION" />
+    </platform>
+
+</plugin>
