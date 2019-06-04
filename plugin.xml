@@ -22,7 +22,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods>
-                <pod name="GoogleTagManager" spec="~> 7.0.0" />
+                <pod name="GoogleTagManager" />
             </pods>
         </podspec>
     </platform>
